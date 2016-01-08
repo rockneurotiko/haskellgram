@@ -1,0 +1,45 @@
+name:                haskellgram
+version:             0.1.0.0
+synopsis:            Telegram bot API wrapper
+description:         Please see README.md
+homepage:            http://github.com/rockneurotiko/haskellgram#readme
+license:             Beerware
+license-file:        LICENSE
+author:              Rock Neurotiko
+maintainer:          miguelglafuente@gmail.com
+copyright:           2016 Rock Neurotiko
+category:            Network
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Telegram.Types
+                     , Telegram.Aux
+                     , Telegram.Methods
+  build-depends:       base >= 4.7 && < 5
+                     , text
+                     , aeson
+                     , aeson-pretty
+                     , bytestring
+                     , string-conversions
+                     , lens
+                     , lens-aeson
+                     -- , either
+                     -- , transformers
+                     -- , unordered-containers
+                     -- , wreq
+                     -- , servant
+                     -- , servant-client
+                     -- , servant-server
+                     -- , resourcet
+                     -- , wai
+                     -- , wai-extra
+                     -- , warp
+                     -- , constraints
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/rockneurotiko/haskellgram
